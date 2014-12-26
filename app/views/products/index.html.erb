@@ -9,7 +9,7 @@
       <td class="list_description">
         <dl>
           <dt><%= product.title %></dt>
-          <dd><%=truncate(strip_tags(product.description), length:60) %></dd>
+          <dd><%= truncate(strip_tags(product.description), length:60) %></dd>
         </dl>
       </td>
       <td class="list_actions">
@@ -20,7 +20,6 @@
     </tr>
   <% end %>
 </table>
-
 <br>
 
 <%= link_to 'New Product', new_product_path %>
