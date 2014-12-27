@@ -10,4 +10,11 @@ two:
   title: MyString
   description: MyText
   image_url: MyString
+  price: 9.99 
+
+ruby:
+  title:   Guardians of the Galaxy
+  description:
+    Awesome movie.
   price: 9.99
+  image_url: guardians.jpg
