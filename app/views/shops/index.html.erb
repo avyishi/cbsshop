@@ -1,0 +1,17 @@
+<h1>Shops Now</h1>
+<% if notice %>
+<p id="notice"><%= notice %></p>
+<% end %>
+
+<h1> CBS Catalog</h1>
+
+<% @products.each do |products| %>
+  <div class="entry">
+    <%= image_tag(products) %>
+    <h3><%= products.title %></h3>
+    <%= sanitize(products.description) %>
+    <div class= "pricce_line">
+      <span class="price"><%= products.price %></span>
+    </div>
+  </div>
+<% end %>
