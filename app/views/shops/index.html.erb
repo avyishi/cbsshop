@@ -4,14 +4,17 @@
 <% end %>
 
 <h1> CBS Catalog</h1>
-
-<% @products.each do |products| %>
-  <div class="entry">
-    <%= image_tag(products) %>
-    <h3><%= products.title %></h3>
-    <%= sanitize(products.description) %>
-    <div class= "pricce_line">
-      <span class="price"><%= products.price %></span>
-    </div>
-  </div>
+<% cache ['shop', Product.latest] do %>
+  <% @products.each do |products| %>
+    <% cache ['entry', products] do %>
+      <div class="entry">
+        <%= image_tag(products) %>
+        <h3><%= products.title %></h3>
+        <%= sanitize(products.description) %>
+        <div class= "pricce_line">
+          <span class="price"><%= number_to_currency(products.price) %></span>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
 <% end %>
