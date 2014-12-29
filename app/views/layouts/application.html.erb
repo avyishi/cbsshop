@@ -11,8 +11,9 @@
     <%= image_tag("logo.jpg") %>
     <%= @page_title || "CBS Shop" %>
   </div>
-  <div if="columns">
+  <div id="columns">
     <div id="side">
+      
       <ul>
         <%= link_to 'Home', shops_path %>
         <%= link_to 'Contact Us', products_path %>

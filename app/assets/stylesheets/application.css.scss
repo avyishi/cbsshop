@@ -33,7 +33,26 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #141;
+    background: #222;
+
+    form, div {
+      display: inline;
+    }
+
+    input {
+      font-size: small;
+    }
+
+    #cart {
+      font-size: smaller;
+      color:   white;
+
+      table {
+        border-top:     2px dotted #295;
+        border-bottom:  2px dotted #295;
+        margin-bottom:  10px;
+      }
+    }
 
     ul {
       padding: 0;
@@ -96,7 +115,7 @@ table tr td {
   }
 }
 
-.carts {
+.carts, #side #cart {
   .item_price, .total_line {
     text-align: right;
   }
