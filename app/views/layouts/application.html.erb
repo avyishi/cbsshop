@@ -13,9 +13,10 @@
   </div>
   <div id="columns">
     <div id="side">
-      <div>
+      <%= hidden_div_if(@cart.line_items.empty?, id: 'cart') do %>
         <%= render @cart %>
-      </div>
+
+      <% end %>
       
       <ul>
         <%= link_to 'Home', shops_path %>
