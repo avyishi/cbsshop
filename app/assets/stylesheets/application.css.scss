@@ -1,9 +1,17 @@
+a:link, a:active {
+   color: #ffffff;
+}
+
+a:visited {
+ color: #6699FF;
+}
+
 #banner {
   background: #fff;
   padding: 10px;
   border-bottom: 2px solid;
-  font: small-caps 40px/40px "Times New Roman", serif;
-  color: #282;
+  font: small-caps 40px/40px "Helvetica", Geneva, Arial, sans-serif;
+  color: #000;
   text-align: center;
 
   img {
@@ -16,7 +24,7 @@
   border: 2px solid red;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #ffffff;
+  background-color: #f0f0f0;
   font: bold smaller sans-serif;
 }
 

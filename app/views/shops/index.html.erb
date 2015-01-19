@@ -2,13 +2,13 @@
 <p id="notice"><%= notice %></p>
 <% end %>
 
-<h1> CBS Catalog</h1>
+<h1>Catalog</h1>
 
 <% cache ['shop', Product.latest] do %>
   <% @products.each do |products| %>
     <% cache ['entry', products] do %>
       <div class="entry">
-        <%= image_tag(products) %>
+        <%= image_tag(products.image_url, :width =>100) %>
         <h3><%= products.title %></h3>
         <%= sanitize(products.description) %>
         <div class= "price_line">
