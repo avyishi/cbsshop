@@ -8,12 +8,12 @@
   <% @products.each do |products| %>
     <% cache ['entry', products] do %>
       <div class="entry">
-        <%= image_tag(products.image_url, :width =>100) %>
+        <%= image_tag(products.image_url, :width =>60) %>
         <h3><%= products.title %></h3>
         <%= sanitize(products.description) %>
         <div class= "price_line">
           <span class="price"><%= number_to_currency(products.price) %></span>
-          <%= button_to 'Add to Cart', line_items_path(product_id: products), remote: true %>
+          <%= button_to 'Add to Cart', line_items_path(product_id: products), remote: true %><br>
         </div>
       </div>
     <% end %>
