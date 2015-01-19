@@ -1,5 +1,5 @@
 #banner {
-  background: #000;
+  background: #fff;
   padding: 10px;
   border-bottom: 2px solid;
   font: small-caps 40px/40px "Times New Roman", serif;
@@ -16,12 +16,12 @@
   border: 2px solid red;
   padding: 1em;
   margin-bottom: 2em;
-  background-color: #f0f0f0;
+  background-color: #ffffff;
   font: bold smaller sans-serif;
 }
 
 #columns {
-  background: #141;
+  background: #000;
 
   #main {
     margin-left: 17em;
@@ -33,7 +33,7 @@
     float: left;
     padding: 1em 2em;
     width: 13em;
-    background: #58a;
+    background: #000;
 
     form, div {
       display: inline;
@@ -48,8 +48,8 @@
       color:   white;
 
       table {
-        border-top:     2px dotted #295;
-        border-bottom:  2px dotted #295;
+        border-top:     2px dotted #000;
+        border-bottom:  2px dotted #000;
         margin-bottom:  10px;
       }
     }
