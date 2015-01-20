@@ -1,14 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-<nav><ul>
-        <%= link_to 'Home', shops_path %>
-        <%= link_to 'Products', products_path %>
-      </ul></nav>
   <title>CBS Shop</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <%= link_to 'Home', shops_path %>
+  <%= link_to 'Products', products_path %>
 </head>
 <body class='<%= controller.controller_name %>'>
   <div id="banner">
