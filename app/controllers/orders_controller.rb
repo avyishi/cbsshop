@@ -42,8 +42,6 @@ class OrdersController < ApplicationController
     end
   end
 
-  # PATCH/PUT /orders/1
-  # PATCH/PUT /orders/1.json
   def update
     respond_to do |format|
       if @order.update(order_params)
